@@ -6,7 +6,7 @@ VOLUME ./:app/
 
 # Copy local directory to /app in container
 # Dont use COPY * /app/ , * will lead to lose of folder structure in /app
-COPY . /app/
+COPY ../.. /app/
 
 # Change WORKDIR
 WORKDIR /app

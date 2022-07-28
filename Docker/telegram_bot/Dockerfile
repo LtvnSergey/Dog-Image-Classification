@@ -6,23 +6,16 @@ VOLUME ./:app/
 
 # Copy local directory to /app in container
 # Dont use COPY * /app/ , * will lead to lose of folder structure in /app
-COPY ../.. /app/
+COPY . /app
 
 # Change WORKDIR
 WORKDIR /app
 
-# Expose port and run the application when the container is started
-EXPOSE 5000
-
-# Create environmental variable
-ENV FLASK_APP=app.py
-
 # Install dependencies
 RUN pip install -r requirements.txt
 
-# Set entrypoint
-ENTRYPOINT [ "flask"]
-CMD [ "run", "--host", "0.0.0.0" ]
+# Set exec command
+CMD python3 /app/telegram_bot.py
 
 # docker build
 # docker build -t "<app name>" .
