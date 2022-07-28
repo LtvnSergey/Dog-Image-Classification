@@ -96,7 +96,7 @@ to do so follow the steps:
 <img src="https://github.com/LtvnSergey/Dog-Image-Classification/blob/main/assets/images/telegram_prediction.png" width="500">
 
 
-## 5. Moduls and tools
+## 5. Modules and tools
 
 #### Web Development:
 Flask | HTML | CSS | Docker | Telegram
