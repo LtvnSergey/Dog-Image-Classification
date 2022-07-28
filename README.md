@@ -50,10 +50,10 @@ Project goals:
 - Download Docker images from docker repository
 
   a. Flask App docker image: 
-``` docker pull plasticglass/telegram_bot:latest ```
+``` docker pull plasticglass/image_app:latest ```
 
   b. Telegram bot docker image: 
-``` docker pull plasticglass/image_app:latest ```
+``` docker pull plasticglass/telegram_bot:latest ```
 
 
 - (Optionaly) Build Docker images:
@@ -68,10 +68,10 @@ Project goals:
 - Run following commands to execute docker container:
 
   a. Flask App docker container: 
-```  docker run -p 5000:3000 image_app ```
+```  docker run -p 5000:3000 plasticglass/image_app ``` then go to http://172.17.0.3:5000
 
   b. Telegram bot docker container: 
-``` docker run bot_app ```
+``` docker run plasticglass/telegram_bot ```
 
 
 ### 4. Telegram bot
