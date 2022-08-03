@@ -31,7 +31,7 @@ Project goals:
 ### 2. Flask app
 
 - To run Flask web app type the command:
-``` pytho3 app.py ```
+``` python3 app.py ```
 - Go to ``` http://127.0.0.1:5000 ``` in browser
 - Upload image with a link or with Choose file option:
 
